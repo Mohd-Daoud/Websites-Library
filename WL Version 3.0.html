@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Websites Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&    display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- Scripte JS -->
+
+  <script>
+    // JavaScript code to show/hide the popup
+    const question = document.querySelector("#question"); // Use querySelector to get the question element by its ID
+    const popup = document.getElementById("popup");
+    const closePopup = document.getElementById("closePopup");
+
+    question.addEventListener("click", (event) => {
+      event.stopPropagation(); // Stop event propagation to prevent interference
+      popup.style.display = "block";
+    });
+
+    closePopup.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+
+    window.addEventListener("click", (event) => {
+      if (event.target === popup) {
+        popup.style.display = "none";
+      }
+    });
+
+
+  </script>
+
+  <div class="container">
+    <div class="header">
+      <div class="li">
+        <nav>
+          <ul>
+            <li class="list">Home</li>
+            <li class="list">About</li>
+            <li class="list">Contact</li>
+          </ul>
+          <div class="search">
+            <input type="text" placeholder=" Search Here">
+            <button class="btn">
+              search
+            </button>
+          </div>
+        </nav>
+      </div>
+      <h1>Websites Library</h1>
+      <div class="search">
+        <input type="text" placeholder=" Search Here">
+        <button class="btn">
+          search
+        </button>
+      </div>
+    </div>
+    <div class="AI">
+      Some Of The Most Useful Websites
+    </div>
+    <div class="content">
+      <div class="folder">
+        <a href="https://www.google.com/" target="_blank">
+          <button>
+            <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-vector-graphic-pixabay-15.png"
+              alt="Gmail Image " width="30" height="15"><br>
+            <hr>
+            Google
+            </br></hr>
+          </button>
+
+          <!-- <span class="question"><i class="fas fa-question-circle">?</i></span>
+          <div id="popup" class="popup">
+            <div class="popup-content">
+              <span class="close" id="closePopup">&times;</span>
+              <p>This is your popup content. You can write about it here.</p>
+            </div>
+          </div> -->
+
+          <span class="question" id="question"><i class="fas fa-question-circle">?</i></span>
+          <div id="popup" class="popup">
+            <div class="popup-content">
+              <span class="close" id="closePopup">&times;</span>
+              <p>This is your popup content. You can write about it here.</p>
+            </div>
+          </div>
+
+
+        </a>
+      </div>
+      <div class="folder">
+        <a href="https://www.gmail.com/" target="_blank">
+          <button>
+            <img src="https://www.logo.wine/a/logo/Gmail/Gmail-Logo.wine.svg" alt="Gmail Image " width="30"
+              height="20"><br>
+            <hr>
+            Gmail
+            </br></hr>
+          </button>
+        </a>
+      </div>
+      <div class="folder">
+        <a href="https://www.youtube.com/" target="_blank">
+          <button>
+            <img src="https://cdn2.iconfinder.com/data/icons/social-media-iconez/64/Youtube-512.png"
+              alt="YouTube Image " width="25"><br>
+            <hr>
+            YouTube
+            </br></hr>
+          </button>
+        </a>
+      </div>
+      <div class="folder">
+        <a href="https://chat.openai.com/chat" target="_blank">
+          <button>
+            <img src="https://static.thenounproject.com/png/2486994-200.png" alt="OpenAI image" width="25"><br>
+            <hr>
+            Open AI
+            </br></hr>
+          </button>
+        </a>
+      </div>
+      <div class="folder">
+        <a href="https://translate.google.com/" target="_blank">
+          <button>
+            <img src="https://i.pinimg.com/564x/72/5d/5d/725d5df8a113f6e31662b173c6fade9d.jpg" alt="G translate image"
+              width="25"><br>
+            <hr>
+            G translate
+            </br></hr>
+          </button>
+        </a>
+      </div>
+      <div class="folder">
+        <a href="https://www.hackerrank.com/dashboard" target="_blank">
+          <button>
+            <img
+              src="https://w7.pngwing.com/pngs/614/108/png-transparent-hackerrank-logo-logos-logos-and-brands-icon.png"
+              width="25"><br>
+            <hr>
+            HackerRank
+            </br></hr>
+          </button>
+        </a>
+      </div>
+      <div class="folder">
+        <a href="https://chrome.google.com/webstore/category/extensions?hl=en" target="_blank">
+          <button>
+            <img src="https://cdn-icons-png.flaticon.com/512/814/814121.png" alt="Chrome Webstore image" width="25"><br>
+            <hr>
+            Webstore
+            </br></hr>
+          </button>
+        </a>
+      </div>
+      <div class="folder">
+        <a href="https://eldalab.in/" target="_blank">
+          <button>
+            <img src="https://eldalab.in/wp-content/uploads/2022/09/logo.png" alt="English Speaking course image"
+              width="25"><br>
+            <hr>
+            EngLearn
+            </br></hr>
+          </button>
+        </a>
+      </div>
+      <div class="folder">
+        <a href="https://www.sejda.com/pdf-editor" target="_blank">
+          <button>
+            <img src="https://i0.wp.com/www.farescd.com/wp-content/uploads/2022/11/Sejda-PDF-Desktop-Pro.png"
+              alt="English Speaking course image" width="25"><br>
+            <hr>
+            PDF.Editor
+            </br></hr>
+          </button>
+        </a>
+      </div>
+      <div class="folder">
+        <a href="https://www.jotform.com/" target="_blank">
+          <button>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbJ_2lW0AmZvAcTHC3A0S9C0TDMfz1X8lagkW4rY8XI-BQcnu6eyh5dfErSm8o6hx2q_wpTDNA4_w&usqp=CAU&ec=48600112"
+              alt="English Speaking course image" width="25"><br>
+            <hr>
+            PDF.Editor
+            </br></hr>
+          </button>
+        </a>
+      </div>
+      <div class="folder">
+        <a href="https://sites.google.com/view/yourdigitaldeveloper/home" target="_blank">
+          <button>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHgs_ZPVRPzcAJhw2G7PiLF9XH7dqnSe2cCJg0mGYvGDsBVizIXTaPdFAnw40IYgWsYhLqCYLgpuQ&usqp=CAU&ec=48600112"
+              alt="English Speaking course image" width="25"><br>
+            <hr>
+            YDDeveloper
+            </br></hr>
+          </button>
+        </a>
+      </div>
+      <div class="AI">
+        AI Websites
+      </div>
+      <div class="content">
+        <div class="folder">
+          <a href="https://www.namingmagic.com/" target="_blank">
+            <button>
+              <img
+                src="https://thumbs.dreamstime.com/b/letter-nm-logo-colorful-splash-background-combination-design-creative-industry-web-business-company-203785392.jpg"
+                alt="Naming Magic Image " width="25"><br>
+              <hr>
+              NamingMagic
+              </br></hr>
+            </button>
+          </a>
+        </div>
+        <div class="folder">
+          <a href="https://www.logoai.com/" target="_blank">
+            <button>
+              <img
+                src="https://w7.pngwing.com/pngs/504/672/png-transparent-computer-software-smart-speaker-logo-ai-blue-cerebrum-smart-speaker.png"
+                alt="logo ai Image " width="25"><br>
+              <hr>
+              logo ai
+              </br></hr>
+            </button>
+          </a>
+        </div>
+        <div class="folder">
+          <a href="https://durable.co/" target="_blank">
+            <button>
+              <img src="https://pbs.twimg.com/profile_images/1547206258440241153/dfqbIXSp_400x400.png"
+                alt="Durable Image " width="25"><br>
+              <hr>
+              Durable
+              </br></hr>
+            </button>
+          </a>
+        </div>
+        <div class="folder">
+          <a href="https://www.synthesia.io/" target="_blank">
+            <button>
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/5787da2d29687fd4e14fad72/1671037480287-7ER1C16YXCHRR45SBI1X/The+Loupe+Blog+Post+Photos+NEW+%28Synthesia%29.png?format=1000w"
+                alt="Synthesia Image " width="25"><br>
+              <hr>
+              Synthesia
+              </br></hr>
+            </button>
+          </a>
+        </div>
+        <div class="folder">
+          <a href="https://looka.com/" target="_blank">
+            <button>
+              <img src="https://pbs.twimg.com/profile_images/1281675091676475392/K_nCaWry_400x400.jpg"
+                alt="Looka Image " width="25"><br>
+              <hr>
+              Looka
+              </br></hr>
+            </button>
+          </a>
+        </div>
+        <div class="folder">
+          <a href="https://www.wix.com/" target="_blank">
+            <button>
+              <img src="https://download.logo.wine/logo/Wix.com/Wix.com-Logo.wine.png" alt="Wix Image " width="25"><br>
+              <hr>
+              Wix
+              </br></hr>
+            </button>
+          </a>
+        </div>
+        <div class="folder">
+          <a href="https://lumen5.com/" target="_blank">
+            <button>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTahinmTOWpYx9EEW-BMiGjBRsmoaosgoplsNa3VAoG0_fED8ShdY0TzM_Un3YVONELYmzNcuj-jgw&usqp=CAU&ec=48600112"
+                alt="Lumen5 Image " width="25"><br>
+              <hr>
+              Lumen5
+              </br></hr>
+            </button>
+          </a>
+        </div>
+        <div class="folder">
+          <a href="https://www.heygen.com/" target="_blank">
+            <button>
+              <img src="https://app.heygen.com/icons/heygen/logo_shape_only.svg" alt="Heygen Image " width="25"><br>
+              <hr>
+              Heygen
+              </br></hr>
+            </button>
+          </a>
+        </div>
+        <div class="folder">
+          <a href="https://flutterflow.io/" target="_blank">
+            <button>
+              <img src="https://app.flutterflow.io/icons/ff-icon-192.png" alt="Flutterflow Image " width="25"><br>
+              <hr>
+              Flutterflow
+              </br></hr>
+            </button>
+          </a>
+        </div>
+        <div class="folder">
+          <a href="https://www.descript.com/overdub" target="_blank">
+            <button>
+              <img src="https://seeklogo.com/images/D/descript-logo-915E459F46-seeklogo.com.png" alt="Descript Image "
+                width="25"><br>
+              <hr>
+              Descript
+              </br></hr>
+            </button>
+          </a>
+        </div>
+        <div class="folder">
+          <a href="https://www.d-id.com/" target="_blank">
+            <button>
+              <img src="https://fpf.org/wp-content/uploads/2021/06/logo.png" alt="D-ID Image " width="25"><br>
+              <hr>
+              D-ID
+              </br></hr>
+            </button>
+          </a>
+        </div>
+        <div class="folder">
+          <a href="https://www.zapsplat.com/" target="_blank">
+            <button>
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/62febbdd2b4e2453e8a04276/cea13226-cf59-4b9a-ac72-625e178b9a61/Zeppelin+Logo+%282%29.png"
+                alt="Zapsplat Image " width="25"><br>
+              <hr>
+              Zapsplat
+              </br></hr>
+            </button>
+          </a>
+        </div>
+        <div class="folder">
+          <a href="https://www.mixo.io/" target="_blank">
+            <button>
+              <img
+                src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_efa5d536ede07bff6c831c3848844297/mixo-io.png"
+                alt="Mixo Ai Image " width="25"><br>
+              <hr>
+              Mixo Ai
+              </br></hr>
+            </button>
+          </a>
+        </div>
+        <div class="folder">
+          <a href="https://www.supermeme.ai/" target="_blank">
+            <button>
+              <img
+                src="https://api.typedream.com/v0/document/public/903bc255-cfe7-4a7b-8210-c72e3104af64_favicon_png.png?bucket=document"
+                alt="Supermeme Ai Image " width="25"><br>
+              <hr>
+              Supermeme
+              </br></hr>
+            </button>
+          </a>
+        </div>
+        <div class="folder">
+          <a href="https://www.lalal.ai/" target="_blank">
+            <button>
+              <img src="https://www.compsmag.com/alternative/wp-content/uploads/2020/08/Lalalai-600x600.png"
+                alt="Lalal Ai Image " width="25"><br>
+              <hr>
+              Lalal ai
+              </br></hr>
+            </button>
+          </a>
+        </div>
+        <div class="AI">
+          Cyber Cafe
+        </div>
+        <div class="folder">
+          <a href="https://www.india.gov.in/" target="_blank">
+            <button>
+              <img src="https://cdn.britannica.com/97/1597-004-05816F4E/Flag-India.jpg"
+                alt="National Portal of India Image " width="25"><br>
+              <hr>
+              NPOI
+              </br></hr>
+            </button>
+          </a>
+        </div>
+        <div class="folder">
+          <a href="https://uidai.gov.in/en/" target="_blank">
+            <button>
+              <img src="https://ceg.karnataka.gov.in/aadhaar/public/storage/dept/744741.png" alt="Aadhar Image "
+                width="25"><br>
+              <hr>
+              Aadhar
+              </br></hr>
+            </button>
+          </a>
+        </div>
+        <button class="button">Add Folder</button>
+      </div>
+</body>
+
+</html>
